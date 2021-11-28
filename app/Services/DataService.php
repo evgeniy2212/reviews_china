@@ -13,9 +13,15 @@ class DataService {
         $years = collect([]);
         $filterYears = collect([]);
         $currentYear = Carbon::now();
-        $years->push(Carbon::createFromFormat('m-d-Y', optional(Review::oldest()->first())->created_at)->format('Y-m-d'));
-        $years->push(Carbon::createFromFormat('m-d-Y', optional(UserCongratulation::oldest()->first())->created_at)->format('Y-m-d'));
-        $years->push(Carbon::parse(optional(User::oldest()->first())->created_at)->format('Y-m-d'));
+        if(Review::oldest()->first()){
+            $years->push(Carbon::createFromFormat('m-d-Y', optional(Review::oldest()->first())->created_at)->format('Y-m-d'));
+        }
+        if(UserCongratulation::oldest()->first()){
+            $years->push(Carbon::createFromFormat('m-d-Y', optional(UserCongratulation::oldest()->first())->created_at)->format('Y-m-d'));
+        }
+        if(User::oldest()->first()){
+            $years->push(Carbon::parse(optional(User::oldest()->first())->created_at)->format('Y-m-d'));
+        }
         $diffYears = $currentYear->diffInYears($years->min()) + 1;
         $minYear = Carbon::parse($years->min())->format('Y');
         for($i=1; $i<=$diffYears;$i++){
