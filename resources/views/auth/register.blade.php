@@ -235,7 +235,7 @@
                 </div>
                 <div class="d-md-flex">
                     <div class="col-md-4 offset-md-4" style="padding: 0 0;height: 70px">
-                        {!! NoCaptcha::renderJs('en') !!}
+                        {!! NoCaptcha::renderJs('zh') !!}
                         {!! NoCaptcha::display(['data-size' => 'normal']) !!}
                     </div>
                 </div>

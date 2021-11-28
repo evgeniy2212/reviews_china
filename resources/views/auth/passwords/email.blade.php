@@ -42,7 +42,7 @@
                         </div>
                         <div class="row justify-content-center">
                             <div class="col-12 col-sm-6">
-                                {!! NoCaptcha::renderJs('en') !!}
+                                {!! NoCaptcha::renderJs('zh') !!}
                                 {!! NoCaptcha::display(['data-size' => 'normal']) !!}
                                 {{--@if ($errors->has('g-recaptcha-response'))--}}
                                 {{--<span class="help-block">--}}
@@ -80,7 +80,7 @@
                         </div>
                         <div class="d-flex justify-content-center">
                             <div class="col-12 col-sm-6">
-                                {!! NoCaptcha::renderJs('en') !!}
+                                {!! NoCaptcha::renderJs('zh') !!}
                                 {!! NoCaptcha::display(['data-size' => 'normal']) !!}
                                 {{--@if ($errors->has('g-recaptcha-response'))--}}
                                 {{--<span class="help-block">--}}
