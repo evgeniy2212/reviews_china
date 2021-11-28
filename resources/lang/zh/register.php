@@ -1,0 +1,21 @@
+<?php
+return [
+    'register' => '登記',
+    'first_name' => '名字',
+    'last_name' => '姓',
+    'nickname' => '暱稱',
+    'city' => '城市',
+    'country' => '國家',
+    'city_town' => '城市',
+    'state' => '地區',
+    'zip_code' => '指數',
+    'e-mail' => '郵箱',
+    'password' => '密碼',
+    'confirm_password' => '確認密碼',
+    'confirm_email' => 'Подтвердить Email',
+    'current_password' => 'Текущий пароль',
+    'new_password' => 'Новый пароль',
+    'create_account' => '建立新帳戶',
+    'two_factor_auth' => '雙因素身份驗證',
+    'two_factor_code' => '我們已經給您發了一封電子郵件，其中包含您的雙因素登錄碼。如果你還沒有收到，',
+];
