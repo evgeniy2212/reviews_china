@@ -175,6 +175,7 @@ return [
     'play_video' => 'Воспроизвести видео',
     'close_and_dont_show' => 'Закрыть и больше не показывать',
     'thank_you_for' => '謝謝你的 :item.',
+    'thank_you_for.review' => '謝謝你的 :item.',
     'team' => 'команда',
     'send_private_message' => 'Отправить личное сообщение автору отзыва.',
     'filter.all' => '全部',
