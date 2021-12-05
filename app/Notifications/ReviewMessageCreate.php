@@ -42,8 +42,8 @@ class ReviewMessageCreate extends Notification
     public function toMail($notifiable)
     {
         return (new MailMessage)
-            ->greeting('Hello, ' . $notifiable->full_name)
-            ->line( config('app.name') . ' informs you create the review at the ' . config('app.name'))
+            ->greeting('你好, ' . $notifiable->full_name)
+            ->line( config('app.name') . ' 通知您在 ' . config('app.name'))
             ->line( '"' . $this->message->message . '"')
             ->action(config('app.name'), url('/'));
     }

@@ -44,7 +44,7 @@ class PersonalInfoController extends Controller
                 \App\Services\DataService::getTranslate('service/message.your_profile_changed')
             ]);
         } else {
-            return back()->withErrors(['msg' => 'Updating ERROR!'])->withInput();
+            return back()->withErrors(['msg' => __('service/index.updating_error')])->withInput();
         }
     }
 }

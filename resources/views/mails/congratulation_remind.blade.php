@@ -1,17 +1,17 @@
 @component('mail::message')
-Hi {{ $user }},
+你好 {{ $user }},
 
-Taking into account your wishes, we remind you that {{ \Carbon\Carbon::now()->diffInDays($date_remind, false) ? \Carbon\Carbon::now()->diffInDays($date_remind, false) . ' day remains until' : ' today' }} the special day,
+考慮到您的意願，我們提醒您 {{ \Carbon\Carbon::now()->diffInDays($date_remind, false) ? \Carbon\Carbon::now()->diffInDays($date_remind, false) . ' 直到' : ' 今天' }} 特別的日子，
 
-<b>Date</b>: {{ $date }}
+<b>日期</b>: {{ $date }}
 
-<b>Name:</b> {{ $name }}
+<b>姓名:</b> {{ $name }}
 
-<b>Category:</b> {{ $date_type }}
+<b>類別:</b> {{ $date_type }}
 
-Until that day, you still have time to prepare for this special day.
+直到那一天，你還有時間為這個特殊的日子做準備。
 
-Respectfully.
+尊敬。
 
-The Reviews4Results Team
+Reviews4CH 團隊
 @endcomponent

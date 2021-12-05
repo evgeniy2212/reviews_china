@@ -41,9 +41,9 @@ class ReviewCommentUpdate extends Notification
     public function toMail($notifiable)
     {
         return (new MailMessage)
-                    ->line('The introduction to the notification.')
-                    ->action('Notification Action', url('/'))
-                    ->line('Thank you for using our application!');
+                    ->line('通知內容簡介.')
+                    ->action('通知操作', url('/'))
+                    ->line('感謝您使用我們的應用程序!');
     }
 
     /**

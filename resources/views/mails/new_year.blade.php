@@ -1,15 +1,15 @@
 @component('mail::message')
-    <b>New Year’s Day</b>
+    <b>元旦</b>
 
-    Happy New Year {{ \Carbon\Carbon::now()->year }}!
+    新年快樂 {{ \Carbon\Carbon::now()->year }}!
 
-    May this year bring peace, health, and happiness, along with plenty of exciting
-    experiences for you to tell us about. The entire Reviews4Results team is thrilled to hear
-    what {{ \Carbon\Carbon::now()->year }} has in store for you.
+    願今年帶來和平、健康和幸福，以及許多令人興奮的事情
+    你的經歷告訴我們。 整個 Reviews4CH 團隊很高興聽到
+    什麼 {{ \Carbon\Carbon::now()->year }} 已經為您準備好了。
 
-    Thank you for your reviews — keep making the world a better place!
+    感謝您的評論 - 繼續讓世界變得更美好！
 
-    Respectfully.
+    尊敬。
 
-    The Reviews4Results Team
+    Reviews4CH 團隊
 @endcomponent

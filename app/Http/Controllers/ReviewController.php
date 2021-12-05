@@ -191,7 +191,8 @@ class ReviewController extends Controller
         $review->save();
         $slug = $review->category->slug;
 
-        return redirect()->route('reviews',['review_item' => $slug])->with(['success_review_creating' => 'Review Created']);
+        return redirect()->route('reviews',['review_item' => $slug])
+            ->with(['success_review_creating' => __('service/index.review_created')]);
     }
 
     public function reviewReaction(Request $request){

@@ -9,12 +9,12 @@ class UserCongratulation extends Model
 {
     public const TYPE_OF_CONGRATULATIONS = [
         [
-            'type_name' => 'Public',
+            'type_name' => '民眾',
             'value_name' => 'is_private',
             'value' => 0
         ],
         [
-            'type_name' => 'Private',
+            'type_name' => '私人的',
             'value_name' => 'is_private',
             'value' => 1
         ],

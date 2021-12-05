@@ -16,7 +16,7 @@ class BannerCategoriesSeeder extends Seeder
             [
                 'title' => [
                     'en' => 'CONGRATULATION',
-                    'zh' => 'ПОЗДРАВЛЕНИЯ'
+                    'zh' => '祝賀'
                 ],
                 'slug' => \Illuminate\Support\Str::slug('congratulation'),
                 'is_published' => true,
@@ -24,7 +24,7 @@ class BannerCategoriesSeeder extends Seeder
             [
                 'title' => [
                     'en' => 'THANK YOU NOTE',
-                    'zh' => 'БЛАГОДАРСТВЕННАЯ ЗАПИСКА'
+                    'zh' => '謝謝你的注意'
                 ],
                 'slug' => \Illuminate\Support\Str::slug('thank you note'),
                 'is_published' => true,
@@ -32,7 +32,7 @@ class BannerCategoriesSeeder extends Seeder
             [
                 'title' => [
                     'en' => 'SELLING',
-                    'zh' => 'ПРОДАЖА'
+                    'zh' => '銷售'
                 ],
                 'slug' => \Illuminate\Support\Str::slug('selling'),
                 'is_published' => true,
@@ -40,7 +40,7 @@ class BannerCategoriesSeeder extends Seeder
             [
                 'title' => [
                     'en' => 'BUSINESS SERVICE AD',
-                    'zh' => 'БИЗНЕС ОБСЛУЖИВАНИЕ'
+                    'zh' => '商業服務'
                 ],
                 'slug' => \Illuminate\Support\Str::slug('business service ad'),
                 'is_published' => true,
@@ -48,7 +48,7 @@ class BannerCategoriesSeeder extends Seeder
             [
                 'title' => [
                     'en' => 'REVIEW',
-                    'zh' => 'ОТЗЫВЫ'
+                    'zh' => '評論'
                 ],
                 'slug' => \Illuminate\Support\Str::slug('review'),
                 'is_published' => true,
@@ -56,7 +56,7 @@ class BannerCategoriesSeeder extends Seeder
             [
                 'title' => [
                     'en' => 'OTHER',
-                    'zh' => 'ДРУГОЕ'
+                    'zh' => '其他'
                 ],
                 'slug' => \Illuminate\Support\Str::slug('other'),
                 'is_published' => true,

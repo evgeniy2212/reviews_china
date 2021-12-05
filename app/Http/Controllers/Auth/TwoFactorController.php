@@ -38,8 +38,7 @@ class TwoFactorController extends Controller
             return redirect()->route('admin.contacts.index');
         }
         return redirect()->back()
-            ->withErrors(['two_factor_code' =>
-                'The two factor code you have entered does not match']);
+            ->withErrors(['two_factor_code' => __('register.two_fa_code')]);
     }
 
     public function resend()
@@ -47,6 +46,6 @@ class TwoFactorController extends Controller
         $user = auth()->user();
         $user->generateTwoFactorCode();
         $user->notify(new TwoFactorCode());
-        return redirect()->back()->withMessage('Two factor code was sent again.');
+        return redirect()->back()->withMessage(__('register.two_fa_code_again'));
     }
 }

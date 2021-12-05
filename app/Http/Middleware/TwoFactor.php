@@ -23,7 +23,7 @@ class TwoFactor
                 $user->resetTwoFactorCode();
                 auth()->logout();
                 return redirect()->route('login')
-                    ->withMessage('Your two factor code expired. Sign In again, please!');
+                    ->withMessage(__('register.two_fa_code_expired'));
             }
             if(!$request->is('verify*'))
             {

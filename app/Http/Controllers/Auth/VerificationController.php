@@ -55,6 +55,6 @@ class VerificationController extends Controller
 
         $request->user()->sendEmailVerificationNotification();
 
-        return redirect()->back()->withSuccess([__('A fresh verification link has been sent to your email address.')]);
+        return redirect()->back()->withSuccess([__('register.refresh_link_has_been_sent')]);
     }
 }

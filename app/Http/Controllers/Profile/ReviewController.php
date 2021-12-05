@@ -102,7 +102,8 @@ class ReviewController extends Controller
         $slug = $review->category->slug;
 
         return $request->redirectToMain
-            ? redirect()->route('reviews',['review_item' => $slug])->with(['success_review_creating' => 'Review Created'])
+            ? redirect()->route('reviews',['review_item' => $slug])
+                ->with(['success_review_creating' => __('service/index.review_created')])
             : redirect()->route('profile-reviews.index');
     }
 

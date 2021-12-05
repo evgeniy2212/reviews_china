@@ -130,7 +130,7 @@
                         <div class="d-flex align-items-center registerFields">
                             <div class="col-sm-3 registerLabel">
                                 <label for="email">
-                                    @lang('register.e-mail') address
+                                    @lang('register.e-mail')
                                 </label>
                             </div>
                             <div class="col-sm-9">

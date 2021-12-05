@@ -1,6 +1,6 @@
 <?php
 return [
-    'site_name' => 'Reviews4Results.com',
+    'site_name' => 'Reviews4CH.com',
     'delete' => 'Delete',
     'done' => 'Done',
     'reply' => 'Reply',

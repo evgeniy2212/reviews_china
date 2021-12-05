@@ -28,7 +28,7 @@
                         @csrf
                         <div class="form-group d-flex flex-wrap align-items-center">
                             <div class="col-12 col-md-3 text-right">
-                                <label for="email">Email</label>
+                                <label for="email">郵箱</label>
                             </div>
                             <div class="col-12 col-md-6">
                                 <input id="email"
@@ -66,7 +66,7 @@
                         @csrf
                         <div class="form-group d-flex flex-wrap align-items-center">
                             <div class="col-12 col-md-3 text-md-right">
-                                <label for="email">Email</label>
+                                <label for="email">郵箱</label>
                             </div>
                             <div class="col-12 col-md-6">
                                 <input id="email"

@@ -154,11 +154,11 @@
                                     </div>
                                     <div class="col-md-9 col-lg-10">
                                         <div id="password-rules" style="display: none;">
-                                            <input id="Length" type="checkbox" class="custom-checkbox"><label for="Length">Must be at least 8 charcters</label>
-                                            <input id="UpperCase" type="checkbox" class="custom-checkbox"><label for="Length">Must have atleast 1 upper case character</label>
-                                            <input id="LowerCase" type="checkbox" class="custom-checkbox"><label for="Length">Must have atleast 1 lower case character</label>
-                                            <input id="Numbers" type="checkbox" class="custom-checkbox"><label for="Length">Must have atleast 1 numeric character</label>
-                                            <input id="Symbols" type="checkbox" class="custom-checkbox"><label for="Length">Must have atleast 1 special character</label>
+                                            <input id="Length" type="checkbox" class="custom-checkbox"><label for="Length">{{ __('passwords.rule_1') }}</label>
+                                            <input id="UpperCase" type="checkbox" class="custom-checkbox"><label for="Length">{{ __('passwords.rule_2') }}</label>
+                                            <input id="LowerCase" type="checkbox" class="custom-checkbox"><label for="Length">{{ __('passwords.rule_3') }}</label>
+                                            <input id="Numbers" type="checkbox" class="custom-checkbox"><label for="Length">{{ __('passwords.rule_4') }}</label>
+                                            <input id="Symbols" type="checkbox" class="custom-checkbox"><label for="Length">{{ __('passwords.rule_5') }}</label>
                                         </div>
                                         <input id="password"
                                                type="text"
