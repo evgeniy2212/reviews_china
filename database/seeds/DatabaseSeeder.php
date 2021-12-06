@@ -17,7 +17,7 @@ class DatabaseSeeder extends Seeder
         $this->call(ReviewCharacteristicsSeeder::class);
         $this->call(CategoryGroupByReviewSeeder::class);
         $this->call(CongratulationSeeder::class);
-        $this->call(ReviewSeeder::class);
+//        $this->call(ReviewSeeder::class);
         $this->call(ReviewFilterSeeder::class);
         $this->call(ReviewFilterValuesSeeder::class);
         $this->call(BadWordsSeeder::class);
