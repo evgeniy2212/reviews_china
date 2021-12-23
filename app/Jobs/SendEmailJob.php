@@ -39,7 +39,7 @@ class SendEmailJob implements ShouldQueue
     {
 //        $users = User::activeUsers();
         $users = User::where('is_admin', true)->whereNotNull('email_verified_at');
-        Log::info(__METHOD__, [$users]);
+        Log::info(__METHOD__, [$users->get()]);
         foreach($users->get()->chunk(100) as $users){
             foreach($users as $user){
                 Mail::to($user->email)->send(new CongratulationEmail($this->templateName, $this->subjectContent));
