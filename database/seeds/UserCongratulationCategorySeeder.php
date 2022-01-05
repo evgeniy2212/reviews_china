@@ -135,6 +135,114 @@ class UserCongratulationCategorySeeder extends Seeder
             ],
             [
                 'title' => [
+                    'en' => 'Engagements',
+                    'zh' => '訂婚'
+                ],
+                'name' => [
+                    'en' => 'Engagements',
+                    'zh' => '訂婚'
+                ],
+                'slug' => \Illuminate\Support\Str::slug('Engagements'),
+                'is_published' => true,
+            ],
+            [
+                'title' => [
+                    'en' => 'Graduation',
+                    'zh' => '畢業'
+                ],
+                'name' => [
+                    'en' => 'Graduation',
+                    'zh' => '畢業'
+                ],
+                'slug' => \Illuminate\Support\Str::slug('Graduation'),
+                'is_published' => true,
+            ],
+            [
+                'title' => [
+                    'en' => 'Happy anniversary',
+                    'zh' => '週年快樂'
+                ],
+                'name' => [
+                    'en' => 'Happy anniversary',
+                    'zh' => '週年快樂'
+                ],
+                'slug' => \Illuminate\Support\Str::slug('Happy anniversary'),
+                'is_published' => true,
+            ],
+            [
+                'title' => [
+                    'en' => 'Happy birthday',
+                    'zh' => '生日快樂'
+                ],
+                'name' => [
+                    'en' => 'Happy birthday',
+                    'zh' => '生日快樂'
+                ],
+                'slug' => \Illuminate\Support\Str::slug('Happy birthday'),
+                'is_published' => true,
+            ],
+            [
+                'title' => [
+                    'en' => 'New born',
+                    'zh' => '新生兒'
+                ],
+                'name' => [
+                    'en' => 'New born',
+                    'zh' => '新生兒'
+                ],
+                'slug' => \Illuminate\Support\Str::slug('New born'),
+                'is_published' => true,
+            ],
+            [
+                'title' => [
+                    'en' => 'New home',
+                    'zh' => '新家'
+                ],
+                'name' => [
+                    'en' => 'New home',
+                    'zh' => '新家'
+                ],
+                'slug' => \Illuminate\Support\Str::slug('New home'),
+                'is_published' => true,
+            ],
+            [
+                'title' => [
+                    'en' => 'Promotion',
+                    'zh' => '晉升'
+                ],
+                'name' => [
+                    'en' => 'Promotion',
+                    'zh' => '晉升'
+                ],
+                'slug' => \Illuminate\Support\Str::slug('Promotion'),
+                'is_published' => true,
+            ],
+            [
+                'title' => [
+                    'en' => 'Starting a new business',
+                    'zh' => '開始新的事業'
+                ],
+                'name' => [
+                    'en' => 'Starting a new business',
+                    'zh' => '開始新的事業'
+                ],
+                'slug' => \Illuminate\Support\Str::slug('Starting a new business'),
+                'is_published' => true,
+            ],
+            [
+                'title' => [
+                    'en' => 'Wedding',
+                    'zh' => '婚禮'
+                ],
+                'name' => [
+                    'en' => 'Wedding',
+                    'zh' => '婚禮'
+                ],
+                'slug' => \Illuminate\Support\Str::slug('Wedding'),
+                'is_published' => true,
+            ],
+            [
+                'title' => [
                     'en' => 'Other',
                     'zh' => '其它'
                 ],
