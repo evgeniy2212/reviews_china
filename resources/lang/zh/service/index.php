@@ -128,6 +128,7 @@ return [
     'edit_contacts' => '編輯聯繫人',
     'edit_profile' => '編輯個人資料',
     'edit' => '編輯',
+    'new_group_name' => '個新的集團',
     'region' => '地區',
     'all_rights_reserved' => '版權所有',
     'contacts' => '聯繫方式',
