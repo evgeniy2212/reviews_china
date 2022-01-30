@@ -97,11 +97,18 @@
   $(document).ready(function () {
     'use strict';
 
+    var slider_enable = sessionStorage.getItem('slider_enable') == 'true';
+    var timeout = 5000;
+
+    if (!slider_enable) {
+      timeout = 42000;
+    }
+
     var swiper = new Swiper('.js-main-slider', {
       loop: true,
       allowTouchMove: false,
       autoplay: {
-        delay: 5000,
+        delay: timeout,
         disableOnInteraction: false
       },
       navigation: {
