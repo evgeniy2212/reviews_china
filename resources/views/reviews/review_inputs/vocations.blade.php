@@ -65,7 +65,7 @@
                     required>
                 <option {{ empty($review) ? 'selected' : '' }} disabled value="">{{ trans('service/index.select_item', ['item' => __('service/index.country')]) }}</option>
                 @foreach($countries as $id => $country)
-                    <option value="{{ $id }}" {{ (!empty($review) && ($review->region->country_id == $id)) ? 'selected' : '' }}>{!! $country !!}</option>
+                    <option value="{{ $id }}" {{ (!empty($review) && ($review->country_id == $id)) ? 'selected' : '' }}>{!! $country !!}</option>
                 @endforeach
             </select>
         </div>

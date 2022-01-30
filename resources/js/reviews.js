@@ -160,8 +160,10 @@
                 }
             });
             review.find('.review-textarea').toggle(500);
-            let is_open =  $(this).text().trim() !== 'Close';
-            is_open ? $(this).text('Close') : $(this).text('Reply');
+            let closeButtonName = $(this).attr('data-close');
+            let replyButtonName = $(this).attr('data-reply');
+            let is_open =  $(this).text().trim() !== closeButtonName;
+            is_open ? $(this).text(closeButtonName) : $(this).text(replyButtonName);
             if(is_open){
                 review_content.animate({
                     height: "50%",
@@ -221,7 +223,7 @@
                     }
                 });
             } else {
-                alert('Comment is empty!');
+                alert('評論為空！');
             }
         });
 
@@ -243,7 +245,7 @@
                 });
             } else {
                 review.find('button').removeAttr("disabled");
-                alert('Mail message is empty!');
+                alert('郵件信息為空！');
             }
         });
 
@@ -271,7 +273,7 @@
                 });
             } else {
                 review.find('button').removeAttr("disabled");
-                alert('Mail message is empty!');
+                alert('郵件信息為空！');
             }
         });
 
@@ -293,7 +295,7 @@
 
         $('#video').change(function() {
             if(this.files[0].size > 35000000){
-                alert("The file must be less than 35 MB!");
+                alert("文件必須小於 35 MB！");
                 this.value = "";
             };
         });

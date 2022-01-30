@@ -64,6 +64,8 @@
                 <a data-toggle="modal"
                    type="button"
                    data-review-id="{{ $review->id }}"
+                   data-close="{!! __('service/index.close') !!}"
+                   data-reply="{!! __('service/index.reply') !!}"
                    id="profileMessageButton-{{ $review->id }}">
                     @lang('service/index.reply')
                 </a>

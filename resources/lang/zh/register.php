@@ -27,4 +27,7 @@ return [
     'create_account' => '建立新帳戶',
     'two_factor_auth' => '雙因素身份驗證',
     'two_factor_code' => '我們已經給您發了一封電子郵件，其中包含您的雙因素登錄碼。如果你還沒有收到，',
+    'verify_email_adsress' => '請單擊下面的按鈕以驗證您的電子郵件地址',
+    'please_click_button' => '確認電子郵件地址',
+    'if_you_didnt_create_account' => '如果您沒有創建帳戶，則無需進一步操作',
 ];
