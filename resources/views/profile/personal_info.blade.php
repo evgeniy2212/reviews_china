@@ -165,7 +165,7 @@
                                            autocomplete="nickname">
                                 </div>
                             </div>
-                            <div class="d-flex mb-2 mb-md-0">
+                            <div class="d-flex mb-2 mb-md-0 mt-3">
                                 <span>
                                     @lang('service/message.pseudonim')
                                 </span>

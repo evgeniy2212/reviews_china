@@ -227,9 +227,7 @@
     text-align: left;
     text-shadow: 1px 1px 5px #2f5496;
     float: left;
-    width: -webkit-min-content;
-    width: -moz-min-content;
-    width: min-content;
+    width: calc(100% - 255px);
     font-family: "ImprintMTShadow";
     font-weight: 500;
     font-size: 1rem;
