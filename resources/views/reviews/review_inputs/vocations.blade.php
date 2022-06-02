@@ -10,7 +10,7 @@
                    type="text"
                    class="form-control input"
                    name="name"
-                   minlength="3"
+                   minlength="1"
                    value="{{ empty($review) ? old('name') : $review->name }}"
                    placeholder="@lang('service/index.review_name_placeholder')"
                    required

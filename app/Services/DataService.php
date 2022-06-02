@@ -24,8 +24,9 @@ class DataService {
         }
         $diffYears = $currentYear->diffInYears($years->min()) + 1;
         $minYear = Carbon::parse($years->min())->format('Y');
-        for($i=1; $i<=$diffYears;$i++){
-            $filterYears->push($minYear++);
+        for($i=0; $i<=$diffYears;$i++){
+            $minYearData = $minYear++;
+            $filterYears->push($minYearData);
         }
 
         return $filterYears;

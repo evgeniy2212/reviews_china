@@ -10,7 +10,7 @@
                    type="text"
                    class="form-control input"
                    name="name"
-                   minlength="3"
+                   minlength="1"
                    value="{{ empty($review) ? old('name') : $review->name }}"
                    placeholder="@lang('register.first_name')"
                    required
@@ -21,7 +21,7 @@
                    type="text"
                    class="form-control input"
                    name="second_name"
-                   minlength="3"
+                   minlength="1"
                    value="{{ empty($review) ? old('second_name') : $review->second_name }}"
                    placeholder="@lang('register.last_name')"
                    required

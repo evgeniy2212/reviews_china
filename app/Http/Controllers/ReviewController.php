@@ -157,7 +157,9 @@ class ReviewController extends Controller
         ReviewService::createReview($request, ($request->has('new_review_group') && $request->new_review_group));
         $slug = $request->category_slug;
 
-        return redirect()->route('reviews',['review_item' => $slug])->with(['success_review_creating' => 'Review Created']);
+        return redirect()
+            ->route('reviews',['review_item' => $slug])
+            ->with(['success_review_creating' => 'Review Created']);
 //        return $request->has('new_review_group') && $request->new_review_group
 //            ? redirect()->route('reviews',['review_item' => $slug])->with(['review_moderation' => 'Review Created'])
 //            : redirect()->route('reviews',['review_item' => $slug])->with(['success_review_creating' => 'Review Created']);

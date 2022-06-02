@@ -17,7 +17,7 @@ class User extends Authenticatable implements MustVerifyEmail
 
     const MAX_BLOCKED_ATTEMPTS = 2;
 
-    const DEFAULT_NAME = 'User';
+    const DEFAULT_NAME = '用戶';
 
     const FILTERS = [
         'ACTIVITY' => [
