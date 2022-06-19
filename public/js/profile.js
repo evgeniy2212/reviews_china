@@ -517,7 +517,7 @@
         $(this).css('display', 'flex');
       }
     });
-    $(this).text().trim() !== 'Close' ? $(this).text('Close') : $(this).text('Complains (' + $(this).data('complains') + ')');
+    $(this).text().trim() !== '關' ? $(this).text('關') : $(this).text('投訴 (' + $(this).data('complains') + ')');
   });
 })(jQuery);
 

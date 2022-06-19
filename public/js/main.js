@@ -184,6 +184,13 @@
         });
       }
     });
+    $(".submitCongratulationButton").click(function (event) {
+      var form = $("#congratulationForm").length > 0 ? $("#congratulationForm") : $("#congratulationForm");
+      var action = $(this).data('action');
+      form.attr('action', action);
+      isExistBadWords = form.find('mark').length ? true : false;
+      validation(form, event);
+    });
     $(".submitReviewButton").click(function (event) {
       var form = $("#createReviewForm").length > 0 ? $("#createReviewForm") : $("#editReviewForm");
       var action = $(this).data('action');
@@ -362,7 +369,7 @@
         }
       });
       review.find('.review-textarea').toggle(750);
-      $(this).text().trim() !== 'Close' ? $(this).text('Close') : $(this).text('Complains (' + $(this).data('complains') + ')');
+      $(this).text().trim() !== '關' ? $(this).text('關') : $(this).text('投訴 (' + $(this).data('complains') + ')');
     });
     $('#review-create-text').click(function (data) {
       badWordsUpdate($('#review-create-text'));
