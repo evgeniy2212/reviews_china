@@ -53,6 +53,7 @@ return [
     'password_enter' => '請輸入您的密碼',
     'continue' => '繼續',
     'close' => '關閉',
+    'open' => '打開',
     'forgot_password_question' => '忘記密碼了嗎？',
     'enter_email' => '請輸入使用的電子郵件。',
     'personal_info' => '個人信息',
