@@ -4,6 +4,7 @@ namespace App\Console\Commands;
 
 use App\Jobs\SendEmailJob;
 use Illuminate\Console\Command;
+use Illuminate\Support\Carbon;
 use Illuminate\Support\Facades\Log;
 
 class SendNewYearMail extends Command
@@ -39,7 +40,7 @@ class SendNewYearMail extends Command
      */
     public function handle()
     {
-        Log::info(__METHOD__);
+        Log::info(__METHOD__, [Carbon::now()->format('d-m-Y')]);
         dispatch(new SendEmailJob('new_year', __('service/mail.subject.happy_new_year')));
     }
 }
