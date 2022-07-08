@@ -40,7 +40,7 @@ class SendNewYearMail extends Command
      */
     public function handle()
     {
-        Log::info(__METHOD__, [Carbon::now()->format('d-m-Y')]);
+        Log::info(__METHOD__, [Carbon::now()->format('d-m-Y H:i:s')]);
         dispatch(new SendEmailJob('new_year', __('service/mail.subject.happy_new_year')));
     }
 }
