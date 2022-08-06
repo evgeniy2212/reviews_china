@@ -2,6 +2,8 @@
 return [
     'mail.hi_this' => '你好是',
     'mail.to_the' => '去',
+    'mail.hi' => '你好, ',
+    'mail.agree' => '我同意',
     'mail.regards' => '最好的祝愿',
     'log_into_account' => '登錄並留下您的評論！',
     'communication_reviewer' => '開放與評論者的溝通',

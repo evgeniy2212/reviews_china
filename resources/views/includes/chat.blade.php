@@ -1,98 +1,98 @@
 <div class="chat__wrapper">
     <div class="chat">
-        <button class="chat__btn js-contacts" type="button">Contacts</button>
-        <button class="chat__btn js-create-contact" type="button">Create contact</button>
+        <button class="chat__btn js-contacts" type="button">往還</button>
+        <button class="chat__btn js-create-contact" type="button">联系人</button>
         <div class="chats">
             <div class="chat__contact is-online js-begin-chat">
-                <span class="chat__name">Demo User 1</span>
-                <span class="chat__status">online</span>
+                <span class="chat__name">演示用户1</span>
+                <span class="chat__status">在线</span>
                 <span class="chat__count">5</span>
             </div>
             <div class="chat__contact js-begin-chat">
-                <span class="chat__name">Demo User 2</span>
-                <span class="chat__status">offline</span>
+                <span class="chat__name">演示用户2</span>
+                <span class="chat__status">离线</span>
                 <span class="chat__count">2</span>
             </div>
         </div>
-        <button class="chat__close js-close-chat" type="button">Close</button>
+        <button class="chat__close js-close-chat" type="button">关闭</button>
         <div class="chat__inner">
             <div class="chat__contacts">
                 <div class="chat__contact is-online js-chat-contact">
-                    <span class="chat__name">Demo User 1</span>
-                    <span class="chat__status">online</span>
+                    <span class="chat__name">演示用户1</span>
+                    <span class="chat__status">在线</span>
                 </div>
-                <div class="chat__contacts js-chat-contact">
-                    <span class="chat__name">Demo User 2</span>
-                    <span class="chat__status">offline</span>
+                <div class="chat__contact js-chat-contact">
+                    <span class="chat__name">演示用户2</span>
+                    <span class="chat__status">离线</span>
                 </div>
             </div>
-            <button class="chat__close js-close-chat-contacts" type="button">Close</button>
+            <button class="chat__close js-close-chat-contacts" type="button">关闭</button>
         </div>
         <div class="chat__settings">
             <div class="chat__contact is-online">
-                <span class="chat__name">Demo User 1</span>
-                <span class="chat__status">ON Line</span>
+                <span class="chat__name">演示用户1</span>
+                <span class="chat__status">在线</span>
             </div>
             <div class="chat__row">
-                <button class="chat__close" type="button">Send link</button>
-                <button class="chat__close js-edit-chat" type="button">Edit contact</button>
-                <button class="chat__close js-begin-chat" type="button">Open chat</button>
-                <button class="chat__close js-open-delete" type="button">Delete contact</button>
+                <button class="chat__close" type="button">发送链接</button>
+                <button class="chat__close js-edit-chat" type="button">编辑联系人</button>
+                <button class="chat__close js-begin-chat" type="button">打开聊天</button>
+                <button class="chat__close js-open-delete" type="button">刪除聯繫人</button>
             </div>
-            <button class="chat__close js-close-settings" type="button">Close</button>
+            <button class="chat__close js-close-settings" type="button">关闭</button>
             <div class="chat__edit">
-                <p class="chat__subtitle">Edit contact</p>
-                <input class="form-control input" type="text" placeholder="Edit chat">
+                <p class="chat__subtitle">更改聯繫資料</p>
+                <input class="form-control input" type="text" placeholder="更改聯繫資料">
                 <div class="chat__buttons">
                     <button class="chat__close"
                             style="margin-bottom: 0px"
                             type="submit">
-                        Edit
+                        改變
                     </button>
                     <button class="chat__close js-close-edit"
                             style="margin-bottom: 0px"
                             type="button">
-                        Close
+                        关闭
                     </button>
                 </div>
             </div>
             <div class="chat__delete">
-                <p class="chat__subtitle">Delete contact</p>
-                <input class="form-control input" type="text" placeholder="Edit chat">
+                <p class="chat__subtitle">刪除聯繫人</p>
+                <input class="form-control input" type="text" placeholder="您的數據">
                 <div class="chat__buttons">
                     <button class="chat__close"
                             style="margin-bottom: 0px"
                             type="submit">
-                        Delete
+                        删除
                     </button>
                     <button class="chat__close js-close-chat-delete"
                             style="margin-bottom: 0px"
                             type="button">
-                        Close
+                        关闭
                     </button>
                 </div>
             </div>
         </div>
         <div class="chat__create">
             <div class="chat__inputs">
-                <input class="chat__input" type="text" placeholder="First Name">
-                <input class="chat__input" type="text" placeholder="Last Name">
-                <input class="chat__input" type="email" placeholder="Email">
+                <input class="chat__input" type="text" placeholder="姓名">
+                <input class="chat__input" type="text" placeholder="姓">
+                <input class="chat__input" type="email" placeholder="電郵">
             </div>
             <div class="chat__buttons">
-                <button class="chat__close" type="button">Invite</button>
-                <button class="chat__close js-close-create" type="button">Close</button>
+                <button class="chat__close" type="button">邀請</button>
+                <button class="chat__close js-close-create" type="button">关闭</button>
             </div>
         </div>
         <div class="chat__wrap">
             <div class="chat__contact is-online">
-                <span class="chat__name">Demo User 1</span>
-                <span class="chat__status">Connected</span>
+                <span class="chat__name">演示用户1</span>
+                <span class="chat__status">在线</span>
             </div>
             <div class="chat__buttons three__mod">
-                <button class="chat__close js-show-btns" type="button">Edit</button>
-                <button class="chat__close js-select-all" type="button" style="display: none;">Select all</button>
-                <button class="chat__close js-delete-messages" type="button" style="display: none;">Delete</button>
+                <button class="chat__close js-show-btns" type="button">改變</button>
+                <button class="chat__close js-select-all" type="button" style="display: none;">選擇全部</button>
+                <button class="chat__close js-delete-messages" type="button" style="display: none;">删除</button>
             </div>
             <div class="chat__window">
                 <div class="chat__holder">
@@ -105,7 +105,7 @@
                                 <label for="messageTest{{$i}}"></label>
                             </div>
                             <img class="chat__decor left__mod" src="{{ asset('images/message-decor.png') }}" alt="#">
-                            <p>Receiver message</p>
+                            <p>消息的收件人</p>
                         </div>
                     @endfor
                 </div>
@@ -113,38 +113,36 @@
             <div class="chat__field-wrap">
                 <div class="chat__field">
                     <img class="chat__decor left__mod" src="{{ asset('images/message-decor.png') }}" alt="#">
-                    <textarea class="chat__textarea js-chat-textarea" placeholder="message"></textarea>
+                    <textarea class="chat__textarea js-chat-textarea" placeholder="信息"></textarea>
                     <img class="chat__decor right__mod" src="{{ asset('images/message-decor.png') }}" alt="#">
                 </div>
                 <input class="btn__emoji js-btn-emoji"
                        type="image"
                        src="{{ asset('/images/emoji_1.png') }}"/>
                 <div class="chat__emoji-holder">
-                        <span class="chat__emoji">
-                            @for($i=1;$i<=24;$i++)
-                                <img src="{{ asset('/images/emoji_' . $i . '.png') }}"
-                                     style="width: auto;height: 32px">
-                            @endfor
-                        </span>
+                    @for($i=1;$i<=24;$i++)
+                        <img src="{{ asset('/images/emoji_' . $i . '.png') }}"
+                             class="chat__emoji">
+                    @endfor
                 </div>
             </div>
             <div class="chat__buttons six__mod">
-                <button data-tooltip="First of all need to select а necessary review by clicking &quot;Open&quot; button"
+                <button data-tooltip="首先，您需要按下按鈕選擇正確的評論 &quot;打開&quot;"
                         class="chat__close"
                         type="button">Twitter</button>
-                <button data-tooltip="First of all need to select а necessary review by clicking &quot;Open&quot; button"
+                <button data-tooltip="首先，您需要按下按鈕選擇正確的評論 &quot;打開&quot;"
                         class="chat__close"
                         type="button">Facebook</button>
-                <button data-tooltip="First of all need to select а necessary review by clicking &quot;Open&quot; button"
+                <button data-tooltip="首先，您需要按下按鈕選擇正確的評論 &quot;打開&quot;"
                         class="chat__close"
                         type="button">Telegram</button>
                 <button class="chat__close"
-                        type="button">Send</button>
+                        type="button">發送</button>
                 <button class="chat__close"
-                        data-tooltip="First of all need to select а necessary review by clicking &quot;Open&quot; button"
-                        type="button">Send Link</button>
+                        data-tooltip="首先，您需要按下按鈕選擇正確的評論 &quot;打開&quot;"
+                        type="button">發送鏈接</button>
                 <button class="chat__close js-close-messages"
-                        type="button">Close</button>
+                        type="button">关闭</button>
             </div>
         </div>
     </div>
@@ -156,6 +154,15 @@
                 c8.6-1,15.5-5.8,16.7-6.7c1.4,0.3,4.6,0.8,7.2,0.8c16.6,0,32-11.2,32-25S48.6,3,32,3z"/>
         </svg>
     </span>
-        <span class="chat__open-text">Chat</span>
+        <span class="chat__open-text">聊天</span>
     </button>
 </div>
+<script>
+    $(document).ready(function() {
+        localStorage.activeScreen = undefined;
+        localStorage.activeContact = undefined;
+        localStorage.currentChatId = undefined;
+        localStorage.showChat = undefined;
+        localStorage.authId = undefined;
+    });
+</script>
