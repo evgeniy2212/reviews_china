@@ -2451,6 +2451,9 @@ function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len 
 //
 //
 //
+//
+//
+//
 
 
 /* harmony default export */ __webpack_exports__["default"] = ({
@@ -3309,6 +3312,15 @@ function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
         if (response.data.success === false) {
           $('#errorMessageContent').text(response.data.message);
           $('#defaultErrorMessageContent').attr("hidden", true);
+
+          if (response.data.url !== undefined) {
+            $('#actionButtonText').text('Send again');
+            $('#actionButtonContainer').removeAttr('hidden');
+            $("#actionModelForm").attr('action', response.data.url);
+            $("#actionModelFormValue").attr('name', 'email');
+            $("#actionModelFormValue").attr('value', response.data.email);
+          }
+
           $('#errorMessageContent').removeAttr('hidden');
           $('#errorMessage').modal();
         } else {
@@ -3336,6 +3348,15 @@ function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
         $('#errorMessageContent').text(errorMessage);
         $('#defaultErrorMessageContent').attr("hidden", true);
         $('#errorMessageContent').removeAttr('hidden');
+
+        if (e.response.data.url !== undefined) {
+          $('#actionButtonText').text('Send again');
+          $('#actionButtonContainer').removeAttr('hidden');
+          $("#actionModelForm").attr('action', e.response.data.url);
+          $("#actionModelFormValue").attr('name', 'email');
+          $("#actionModelFormValue").attr('value', e.response.data.email);
+        }
+
         $('#errorMessage').modal();
         console.log(errorMessage);
       });
@@ -47909,14 +47930,25 @@ var render = function () {
               staticClass: "chat__holder",
             },
             [
-              _c("infinite-loading", {
-                attrs: {
-                  identifier: _vm.chatId,
-                  direction: "top",
-                  distance: _vm.distance,
+              _c(
+                "infinite-loading",
+                {
+                  attrs: {
+                    identifier: _vm.chatId,
+                    direction: "top",
+                    distance: _vm.distance,
+                  },
+                  on: { infinite: _vm.infiniteHandler },
                 },
-                on: { infinite: _vm.infiniteHandler },
-              }),
+                [
+                  _c("div", { attrs: { slot: "no-more" }, slot: "no-more" }),
+                  _vm._v(" "),
+                  _c("div", {
+                    attrs: { slot: "no-results" },
+                    slot: "no-results",
+                  }),
+                ]
+              ),
               _vm._v(" "),
               _vm._l(_vm.messages, function (message, $index) {
                 return _c(

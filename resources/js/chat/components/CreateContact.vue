@@ -103,6 +103,15 @@ export default {
                     if(response.data.success === false){
                         $('#errorMessageContent').text(response.data.message);
                         $('#defaultErrorMessageContent').attr("hidden",true);
+
+                        if(response.data.url !== undefined){
+                            $('#actionButtonText').text('Send again');
+                            $('#actionButtonContainer').removeAttr('hidden');
+                            $("#actionModelForm").attr('action', response.data.url);
+                            $("#actionModelFormValue").attr('name', 'email');
+                            $("#actionModelFormValue").attr('value', response.data.email);
+                        }
+
                         $('#errorMessageContent').removeAttr('hidden');
                         $('#errorMessage').modal();
                     } else {
@@ -124,6 +133,15 @@ export default {
                     $('#errorMessageContent').text(errorMessage);
                     $('#defaultErrorMessageContent').attr("hidden",true);
                     $('#errorMessageContent').removeAttr('hidden');
+
+                    if(e.response.data.url !== undefined){
+                        $('#actionButtonText').text('Send again');
+                        $('#actionButtonContainer').removeAttr('hidden');
+                        $("#actionModelForm").attr('action', e.response.data.url);
+                        $("#actionModelFormValue").attr('name', 'email');
+                        $("#actionModelFormValue").attr('value', e.response.data.email);
+                    }
+
                     $('#errorMessage').modal();
                     console.log(errorMessage);
                 });

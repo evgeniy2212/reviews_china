@@ -107,7 +107,9 @@ class ChatController extends Controller
             return response()->json(
                 [
                     'success' => false,
-                    'message' => '您已經有這樣的聯繫人，或者您已經發送了請求以較早添加聯繫人。'
+                    'message' => '您已經有這樣的聯繫人，或者您已經發送了請求以較早添加聯繫人。',
+                    'email' => $contact->email,
+                    'url' => route('chat.contactMailSendAgain')
                 ]
             );
         }
@@ -117,9 +119,39 @@ class ChatController extends Controller
         return response()->json(
             [
                 'success' => true,
-                'message' => '您的邀請是發送的。 接受後，您將在聊天中的聯繫人中看到一個新名稱，並且可以隨時為您提供方便的文本。'
+                'message' => '您的邀請是發送的。 接受後，您將在聊天中的聯繫人中看到一個新名稱，並且可以隨時為您提供方便的文本。',
+                'email' => $contact->email,
+                'url' => route('chat.contactMailSendAgain')
             ]
         );
+    }
+
+    /**
+     * @param SendContactMailRequest $request
+     *
+     * @return \Illuminate\Http\JsonResponse
+     */
+    public function sendContactAgain(SendContactMailRequest $request)
+    {
+        $contact = $this->provider
+            ->checkContactExistingByEmail(
+                $request->get('email')
+            );
+        if(!$contact){
+            return response()->json(
+                [
+                    'success' => false,
+                    'message' => '嘗試重新創建聯繫人，您沒有與此電子郵件的聯繫人。'
+                ]
+            );
+        }
+        $this->provider->storeContact(
+            $request->validated(),
+            $contact->pivot->token
+        );
+
+        return redirect()->route('profile-info')
+            ->withSuccess(["您的邀請已發送。 接受後，您將在聊天聯繫人中看到一個新名稱，並且可以在您方便的任何時間交換文本。"]);
     }
 
     /**
