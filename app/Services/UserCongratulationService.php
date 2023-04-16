@@ -47,7 +47,10 @@ class UserCongratulationService {
         if($request->is_private == true){
             $user = User::activeUsers()->where('name', $request->name)
                 ->where('last_name', $request->second_name)
-                ->firstOrFail();
+                ->first();
+            if(! $user){
+                return redirect()->back()->withErrors([__('service/index.error')]);
+            }
             $request = $request->merge([
                 'to' => $user->id
             ]);
