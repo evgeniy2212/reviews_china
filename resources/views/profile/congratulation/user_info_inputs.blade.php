@@ -10,7 +10,7 @@
                    type="text"
                    class="form-control input"
                    name="name"
-                   minlength="3"
+                   minlength="1"
                    value="{{ empty($congratulation) ? old('name') : $congratulation->name }}"
                    placeholder="@lang('register.first_name')"
                    required
@@ -21,7 +21,7 @@
                    type="text"
                    class="form-control input"
                    name="second_name"
-                   minlength="3"
+                   minlength="1"
                    value="{{ empty($congratulation) ? old('second_name') : $congratulation->second_name }}"
                    placeholder="@lang('register.last_name')"
                    required
@@ -72,7 +72,7 @@
                    type="text"
                    class="form-control input"
                    name="city"
-                   minlength="3"
+                   minlength="1"
                    value="{{ empty($congratulation) ? old('city') : $congratulation->city }}"
                    required
                    placeholder="@lang('register.city_town')"

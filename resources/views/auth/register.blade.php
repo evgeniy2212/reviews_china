@@ -23,7 +23,7 @@
                                                type="text"
                                                class="form-control input"
                                                name="name"
-                                               minlength="3"
+                                               minlength="1"
                                                value="{{ old('name') }}"
                                                required
                                                autocomplete="name">
@@ -84,7 +84,7 @@
                                                type="text"
                                                class="form-control input"
                                                name="last_name"
-                                               minlength="3"
+                                               minlength="1"
                                                value="{{ old('last_name') }}"
                                                required
                                                autocomplete="last_name">
@@ -103,7 +103,7 @@
                                                type="text"
                                                class="form-control input"
                                                name="zip_code"
-                                               minlength="3"
+                                               minlength="1"
                                                value="{{ old('zip_code') }}"
                                                required
                                                autocomplete="zip_code">
@@ -118,7 +118,7 @@
                                                type="text"
                                                class="form-control input"
                                                name="city"
-                                               minlength="3"
+                                               minlength="1"
                                                value="{{ old('city') }}"
                                                required
                                                autocomplete="city">
@@ -188,7 +188,7 @@
                                                    autocomplete="nickname">
                                         </div>
                                     </div>
-                                    <div class="d-flex">
+                                    <div class="d-flex pt-2">
                                         <span>
                                             {!! __('service/message.pseudonim') !!}
                                         </span>
