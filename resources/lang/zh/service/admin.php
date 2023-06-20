@@ -60,6 +60,7 @@ return [
     'max_banners_published' => '最大金額 (:count) 橫幅已經發布',
     'user_updated_successfully' => '用戶 :name 成功更新!',
     'review_updated_successfully' => '評論已成功更新！',
+    'congratulation_updated_successfully' => '恭喜更新成功！',
     'logo_saved_successfully' => '標誌保存成功！',
     'logo_delete_successfully' => '標誌移除成功！',
     'logo_delete_error' => '標誌刪除錯誤！',
