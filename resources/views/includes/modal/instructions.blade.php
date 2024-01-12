@@ -7,7 +7,11 @@
             </div>
             <div class="instruction-videos">
                 <div class="instruction-preview">
-                    <div class="previewInstructionImage" style="height: 121px; background-position: center top; background-image: url('{{ asset('storage/images/default_images/instructions/test_video_preview.jpg') }}'); background-size: 177px 100px;">
+                    <div class="previewInstructionImage"
+                         style="height: 121px;
+                         background-position: center top;
+                         background-image: url('{{ asset('storage/images/default_images/instructions/tutorial_1.png') }}');
+                         background-size: 177px 100px;">
                         <span>{{ __('service/index.tutorial_part', ['number' => 1]) }}</span>
                     </div>
                     {{--                    <img src="{{ asset('storage/images/default_images/instructions/test_video_preview.jpg') }}"--}}
@@ -16,13 +20,17 @@
                     <a class="otherButton"
                        type="button"
                        target="_blank"
-                       href="https://www.youtube.com/watch?v=Yl_FJAOcFgQ"
+                       href="https://youtu.be/teuQT1V2yww"
                        id="instruction-video2">
                         @lang('service/index.play_video')
                     </a>
                 </div>
                 <div class="instruction-preview">
-                    <div class="previewInstructionImage" style="height: 121px; background-position: center top; background-image: url('{{ asset('storage/images/default_images/instructions/test_video_preview.jpg') }}'); background-size: 177px 100px;">
+                    <div class="previewInstructionImage"
+                         style="height: 121px;
+                         background-position: center top;
+                         background-image: url('{{ asset('storage/images/default_images/instructions/tutorial_2.png') }}');
+                         background-size: 177px 100px;">
                         <span>{{ __('service/index.tutorial_part', ['number' => 2]) }}</span>
                     </div>
 {{--                    <img src="{{ asset('storage/images/default_images/instructions/test_video_preview.jpg') }}"--}}
@@ -31,13 +39,17 @@
                     <a class="otherButton"
                        type="button"
                        target="_blank"
-                       href="https://www.youtube.com/watch?v=Yl_FJAOcFgQ"
+                       href="https://youtu.be/s46WZqP-FoQ"
                        id="instruction-video2">
                         @lang('service/index.play_video')
                     </a>
                 </div>
                 <div class="instruction-preview">
-                    <div class="previewInstructionImage" style="height: 121px; background-position: center top; background-image: url('{{ asset('storage/images/default_images/instructions/test_video_preview.jpg') }}'); background-size: 177px 100px;">
+                    <div class="previewInstructionImage"
+                         style="height: 121px;
+                         background-position: center top;
+                         background-image: url('{{ asset('storage/images/default_images/instructions/tutorial_3.png') }}');
+                         background-size: 177px 100px;">
                         <span>{{ __('service/index.tutorial_part', ['number' => 3]) }}</span>
                     </div>
                     {{--                    <img src="{{ asset('storage/images/default_images/instructions/test_video_preview.jpg') }}"--}}
@@ -46,13 +58,17 @@
                     <a class="otherButton"
                        type="button"
                        target="_blank"
-                       href="https://www.youtube.com/watch?v=Yl_FJAOcFgQ"
+                       href="https://youtu.be/X5NVO9EJTGE"
                        id="instruction-video2">
                         @lang('service/index.play_video')
                     </a>
                 </div>
                 <div class="instruction-preview">
-                    <div class="previewInstructionImage" style="height: 121px; background-position: center top; background-image: url('{{ asset('storage/images/default_images/instructions/test_video_preview.jpg') }}'); background-size: 177px 100px;">
+                    <div class="previewInstructionImage"
+                         style="height: 121px;
+                         background-position: center top;
+                         background-image: url('{{ asset('storage/images/default_images/instructions/tutorial_4.png') }}');
+                         background-size: 177px 100px;">
                         <span>{{ __('service/index.tutorial_part', ['number' => 4]) }}</span>
                     </div>
                     {{--                    <img src="{{ asset('storage/images/default_images/instructions/test_video_preview.jpg') }}"--}}
@@ -61,7 +77,7 @@
                     <a class="otherButton"
                        type="button"
                        target="_blank"
-                       href="https://www.youtube.com/watch?v=Yl_FJAOcFgQ"
+                       href="https://youtu.be/y3tQN_QDwWY"
                        id="instruction-video2">
                         @lang('service/index.play_video')
                     </a>
